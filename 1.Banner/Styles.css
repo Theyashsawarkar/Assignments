@@ -2,7 +2,7 @@
    border: 3px solid #dbd6d6;
    border-radius: 10px;
    width: 500px;
-   height: 500px;
+   height: 450px;
    margin : 250px 700px ;
    font-family: 'robo', sans-serif;
 }
@@ -10,7 +10,7 @@
 hr {
    width: 300px;
    margin-left: 20px;
-   margin-top: -10px;
+   margin-top: -15px;
 }
 
 @font-face {
@@ -38,7 +38,7 @@ p {
 }
 
 #money {
-   margin-top: 25px;
+   margin-top: 15px;
    font-size: 30px;
    font-weight: bold;
 }

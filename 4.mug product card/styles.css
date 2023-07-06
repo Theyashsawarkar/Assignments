@@ -41,7 +41,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   align-self: center;
   font-weight: lighter;
-  padding-left: 30px;
+  padding-left: 35px;
   padding-top: 6px;
 }
 
@@ -52,26 +52,26 @@ h1 {
   padding-left: 30px;
   margin-right: 0px;
   margin-bottom: 0.7em;
-  margin-left: 0px;
+  margin-left: 5px;
   width: 256.52px;
   line-height: 1;
 }
 p {
   height: 76px;
-  line-height: 0.9;
+  line-height: 1;
   display: block;
   font-size: 20px;
   font-weight: 500;
   padding-right: 40px;
   padding-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 35px;
   color: hsl(228, 12%, 48%);
 }
 
 .discount-price {
   font-size: 2rem;
-  padding-left: 30px;
-  padding-top: 15px;
+  padding-left: 35px;
+  padding-top: 20px;
   font-weight: 700;
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
@@ -81,26 +81,29 @@ p {
 .actual-price {
   font-size: 1.3rem;
   font-weight: lighter;
-  padding-left: 10px;
+  padding-left: 15px;
   color: hsl(228, 12%, 48%);
 }
 
-.button {
+button {
   border-radius: 10px;
+  border: none;
   width: 320px;
   height: 45px;
   display: flex;
   font-family: "Montserrat", sans-serif;
-  margin-top: 10px;
-  margin-left: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 35px;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: hsl(158deg 38.1% 34.89%);
 }
 
-.button:hover {
+button:hover {
   background-color: hsl(158, 38%, 24%);
+  cursor: pointer;
 }
 
 .cart {

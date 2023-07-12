@@ -44,7 +44,3 @@ button::before {
 button:hover::before {
   transform: scaleX(1);
 }
-
-button:hover {
-  color: #fff;
-}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 10px auto;
+  width: 1000px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 5px;
+  color: white;
+  background-color: rgb(2, 4, 42);
+}
+.logo {
+  height: 35px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.jk {
+  padding-bottom: 10px;
+}
+.jk:hover {
+  color: rgb(43, 132, 234);
+  cursor: pointer;
+  border-bottom: 3px solid rgb(43, 132, 234);
+}
+
+.nl {
+  margin-bottom: 10px;
+}
+.nl:hover {
+  color: rgb(43, 132, 234);
+  cursor: pointer;
+}
+.flag {
+  height: 20px;
+}
+.flag:hover {
+  cursor: pointer;
+}
+
+#log-in {
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  border-color: rgb(43, 132, 234);
+  padding: 5px 15px;
+}
+
+#log-in:hover {
+  cursor: pointer;
+}
+
+#sign-up {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: rgb(43, 132, 234);
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: font-weight ease 500ms;
+}
+
+#sign-up:hover {
+  font-weight: 700;
+  cursor: pointer;
+}

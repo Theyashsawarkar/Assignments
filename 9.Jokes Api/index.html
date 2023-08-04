@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .active {
+        color: slateblue;
+        border: 3px solid slategrey;
+      }
+      .mystyle {
+        font-family: cursive;
+      }
+    </style>
+
+    <link rel="shortcut icon" href="img/laugh.png" type="image/x-icon" />
+    <title>Jokes</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="h-[100vh] w-[100vw] overflow-hidden">
+      <!-- heading -->
+      <h1
+        class="text-center mt-16 font-extrabold text-7xl capitalize text-slate-500 mystyle"
+      >
+        What type of jokes do you like ?
+      </h1>
+
+      <!-- container -->
+      <div
+        class="flex justify-between flex-col h-full items-center my-14 relative"
+      >
+        <!-- buttons container -->
+        <div class="flex justify-around w-[50%]">
+          <button
+            class="text-slate-600 font-bold text-[1.2rem] w-60 h-10 rounded-lg flex items-center justify-center bg-gray-400 active mystyle"
+            id="programing-jokes"
+          >
+            programming jokes
+          </button>
+          <button
+            class="text-slate-600 font-bold text-[1.2rem] w-60 h-10 rounded-lg flex items-center justify-center bg-gray-400 mystyle"
+            id="dark-jokes"
+          >
+            Dark jokes
+          </button>
+          <button
+            class="text-slate-600 font-bold text-[1.2rem] w-60 h-10 rounded-lg flex items-center justify-center bg-gray-400 mystyle"
+            id="random-jokes"
+          >
+            Random
+          </button>
+        </div>
+
+        <!-- joke container -->
+        <div
+          class="w-[80%] h-[60%] absolute top-[10%] flex flex-col items-center justify-center"
+        >
+          <!-- joke para -->
+          <p
+            id="joke-para"
+            class="text-slate-600 text-4xl font-bold w-2/3 mystyle absolute top-32"
+          ></p>
+          <!-- buttom for next joke -->
+          <button
+            class="text-slate-600 font-bold text-[1.2rem] w-52 h-10 rounded-lg flex items-center justify-center bg-blue-300 absolute bottom-1 right-[1%] mystyle"
+            id="next-button"
+            onclick="joke()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

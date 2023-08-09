@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DevDetective</title>
+  </head>
+  <body>
+    <div class="wrapper dark">
+      <div class="container">
+        <!-- heading and switch button -->
+        <div class="heading">
+          <h1>DevDetective</h1>
+
+          <!-- light mode -->
+          <div class="light-mode switch-btn">
+            <button>
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <label for="switch">LIGHT</label>
+          </div>
+
+          <!-- dark mode -->
+          <div class="dark-mode switch-btn active">
+            <button>
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <label for="switch">DARK</label>
+          </div>
+        </div>
+
+        <!-- search form -->
+        <form class="search search-light">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter a GitHub Username. . ."
+          />
+
+          <label for="search-input">
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+          </label>
+
+          <!-- clear button -->
+          <i id="clear-btn" class="fa-solid fa-xmark hide"></i>
+
+          <button data-search-btn type="submit">Search</button>
+        </form>
+
+        <!-- profile container -->
+        <div class="profile-container">
+          <!-- profile pic -->
+          <img id="profile-pic" src="#" alt="" />
+
+          <!-- profile -->
+          <div class="profile">
+            <!-- name -->
+            <h2 data-name>name</h2>
+
+            <!-- id -->
+            <a
+              id="git-id"
+              data-username
+              href="https://github.com/Theyashsawarkar"
+            >
+              id
+            </a>
+
+            <!-- joined date -->
+            <p data-joined-date>Joining date</p>
+          </div>
+
+          <!-- about section -->
+          <p class="about">bio</p>
+
+          <!-- repos-followers-following -->
+          <div class="numbbers-container">
+            <!-- repos -->
+            <div id="repos">
+              <p>Repos</p>
+              <span id="repos-number">#</span>
+            </div>
+
+            <!-- followers -->
+            <div id="followers">
+              <p>Followers</p>
+              <span id="followers-number">#</span>
+            </div>
+
+            <!-- following -->
+            <div id="following">
+              <p>Following</p>
+              <span id="following-number">#</span>
+            </div>
+          </div>
+
+          <!-- links -->
+          <div class="links">
+            <!-- address -->
+            <div id="address">
+              <i class="fa-solid fa-location-dot"></i>
+              <p data-address>#</p>
+            </div>
+
+            <!-- website -->
+            <div id="website">
+              <i class="fa-solid fa-link"></i>
+              <a data-website href="">#</a>
+            </div>
+
+            <!-- twitter -->
+            <div id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+              <a data-twitter href="">#</a>
+            </div>
+
+            <!-- job -->
+            <div id="job">
+              <i class="fa-sharp fa-solid fa-building"></i>
+              <p data-job>#</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

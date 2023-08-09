@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-wrapper {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 40%;
+  height: 90%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  margin-bottom: 5vh;
+  justify-content: space-between;
+}
+
+.switch-btn {
+  display: none;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.switch-btn :hover {
+  cursor: pointer;
+}
+
+.switch-btn button {
+  all: unset;
+  display: flex;
+  align-items: flex-start;
+}
+
+p[data-joined-date] {
+  position: fixed;
+  right: 35%;
+  top: 40%;
+}
+
+.active {
+  display: flex;
+}
+
+.search {
+  display: flex;
+  height: 7vh;
+  border: 1px solid black;
+  margin-bottom: 3vh;
+  border-radius: 15px;
+  position: relative;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-dark {
+  border: 1px solid white;
+}
+
+#search-icon {
+  font-size: 1.6rem;
+  position: absolute;
+  left: 3%;
+  top: 30%;
+}
+
+#search-input {
+  all: unset;
+  word-spacing: 5%;
+  font-size: 1.5rem;
+  border: none;
+  margin-left: 8%;
+}
+
+#search-icon:hover {
+  cursor: text;
+}
+
+.search button {
+  padding: 1vh 2vw;
+  border-radius: 10px;
+}
+
+.search button:hover {
+  cursor: pointer;
+}
+
+#clear-btn {
+  font-size: 1.5rem;
+  right: 35%;
+  top: 30%;
+  display: flex;
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+#clear-btn:hover {
+  cursor: pointer;
+}
+
+.profile-container {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.profile-container-dark {
+  border: 1px solid white;
+}
+
+#profile-pic {
+  position: absolute;
+  left: 5%;
+  top: 8%;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.profile {
+  position: absolute;
+  top: 15%;
+  left: 26%;
+}
+
+#git-id {
+  display: block;
+  margin: 1vh 0;
+}
+
+.about {
+  position: absolute;
+  left: 26%;
+  top: 30%;
+  height: auto;
+  margin-bottom: 1vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 30%;
+  line-height: 1.5;
+  word-spacing: 0.2em;
+}
+
+.numbbers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 68%;
+  height: 10vh;
+  position: absolute;
+  left: 26%;
+  top: 50%;
+  border-radius: 10px;
+  border: 1px solid black;
+  gap: 2rem;
+}
+
+.numbbers-container-dark {
+  border: 1px solid white;
+}
+
+.numbbers-container div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.links {
+  width: 68%;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  position: absolute;
+  left: 30%;
+  top: 80%;
+}
+
+.links div i {
+  margin: 0 1rem;
+}
+
+.links div p {
+  display: inline-block;
+}

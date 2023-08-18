@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  border: 15px dashed grey;
+  border-radius: 15px;
+  padding: 5vh 15vw;
+}
+
+h1 {
+  font-size: 7rem;
+  margin-bottom: 5vh;
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: cursive;
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  height: max-content;
+  width: 1060px;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.1), 0 6px 2px 0 rgba(0, 0, 0, 0.11);
+}
+
+.para {
+  margin-top: 1rem;
+}
+
+.full-width {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.05rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+}
+
+label {
+  height: fit-content;
+  width: max-content;
+  display: block;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  margin-left: 0.2rem;
+  text-transform: capitalize;
+}
+
+.prefrences {
+  display: flex;
+  align-items: baseline;
+}
+
+.prefrences label,
+.prefrences p {
+  margin-left: 1rem;
+}
+
+.faint {
+  color: gray;
+}
+.prefrences label {
+  margin-top: 1rem;
+}
+
+.prefrences p {
+  margin-top: -0.5rem;
+}
+
+button {
+  all: unset;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  margin-right: 5rem;
+  border-radius: 10px;
+  background-color: rgb(3, 140, 194);
+}
+
+.clear {
+  background-color: red;
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -14,6 +14,7 @@ app.get("/", (request, response) => {
 });
 
 // Enable JSON request and response handling for the application
+// it should be above the routes as it parses them , so it should be executed first
 app.use(express.json());
 
 // Connect to the database by importing and executing a database configuration file
@@ -22,7 +23,7 @@ db();
 
 // Import and use a router for handling routes related to posting blogs
 const router = require("./Routes/postBlog");
-app.use("/app", router);
+app.use("/app", router); // we are mounting / appending all the routes after /app
 
 // Error handling middleware that catches and handles various types of errors
 app.use((err, req, res, next) => {

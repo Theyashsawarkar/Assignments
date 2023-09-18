@@ -3,6 +3,7 @@ const { handlePostBlog } = require("../Controllers/handlePostBlog");
 const { handleDeletePost } = require("../Controllers/handleDeletePost");
 const { handleUpdateBlog } = require("../Controllers/handleUpdateBlog");
 const { handleLike } = require("../Controllers/handleLike");
+const { handleComment } = require("../Controllers/handleComment");
 const {
   handleGiveAllBlogPosts,
 } = require("../Controllers/handleGiveAllBlogPosts");
@@ -24,6 +25,6 @@ router.put("/updateBlog/:id", handleUpdateBlog);
 router.put("/like/:id", handleLike);
 
 // // updates comment
-// router.put("/comment", handleComment);
+router.put("/comment/:id", handleComment);
 
 module.exports = router;
